@@ -23,10 +23,6 @@ var authServer = {
 
 // client information
 
-/*
- * Add the client information in here
- */
-
 var client ={
 	"client_id": "oauth-client-1",
 	"client_secret": "oauth-client-secret-1",
@@ -39,8 +35,10 @@ var protectedResource = 'http://localhost:9002/resource';
 
 var state = null;
 
-var access_token = null;
+// var access_token = null;
+var access_token = '987tghjkiu6trfghjuytrghj';
 var scope = null;
+var refresh_token = 'j2r3oj32r23rmasd98uhjrk2o3i';
 
 app.get('/', function (req, res) {
 	res.render('index', {access_token: access_token, scope: scope});
